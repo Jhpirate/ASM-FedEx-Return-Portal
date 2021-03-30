@@ -1,0 +1,37 @@
+.alert {
+    background-color: #c4453c;
+    color: #f6f6f6;
+    display: block;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: -55px;
+    width: 100%;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.alert {
+    animation: alert 1s ease forwards;
+}
+
+#alert:target {
+    display: none;
+}
+
+#alert {
+    position: relative;
+}
